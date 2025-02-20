@@ -22,11 +22,43 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header>
+          <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          ></link>
+          <nav className="navbar navbar-default">
+            <div className="container-fluid bg-blue-500">
+              <div className="navbar-header">
+                <a className="navbar-brand" href="#">
+                  Growth HUB Website
+                </a>
+              </div>
+              <ul className="nav navbar-nav ">
+                <li className="active">
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/users">users</a>
+                </li>
+                <li>
+                  <a href="/users-client">users-client</a>
+                </li>
+                <li>
+                  <a href="/users-ORM-DB">users-ORM_DB</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
         <div className="content">{children}</div>
+        {/* children nothing but route page  */}
         <footer className="footer">
           <p>
-            Author: Hege Refsnes
-            <a href="mailto:hege@example.com">hege@example.com</a>
+            Growth HUB Portal
+            <a href="mailto:growth@example.com" className="text-red-500 p-5">
+              growth@example.com
+            </a>
           </p>
         </footer>
       </body>

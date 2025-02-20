@@ -11,6 +11,7 @@ export default async function UsersPage() {
           <p className="text-gray-700">Username: {user.username}</p>
           <p className="text-gray-700">Email: {user.email}</p>
           <p className="text-gray-700">Phone: {user.phone}</p>
+          <p> users page</p>
         </div>
       ))}
     </div>

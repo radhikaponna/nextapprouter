@@ -41,7 +41,7 @@ export default function UsersClient() {
           <p className="text-gray-700">Username: {user.username}</p>
           <p className="text-gray-700">Email: {user.email}</p>
           <p className="text-gray-700">Phone: {user.phone}</p>
-          <p>Radhika</p>
+          <p>users-client</p>
         </div>
       ))}
     </div>

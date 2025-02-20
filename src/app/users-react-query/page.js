@@ -30,18 +30,19 @@ function DataComponent() {
     <div>
       <h1>Data</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
+      <p> users-react-query</p>
     </div>
   );
 }
 
-// Usage in a Next.js page
-function HomePage() {
-  return (
-    <QueryProvider>
-      <DataComponent />
-    </QueryProvider>
-  );
-}
+// // Usage in a Next.js page
+// function HomePage() {
+//   return (
+//     <QueryProvider>
+//       <DataComponent />
+//     </QueryProvider>
+//   );
+// }
 // QueryProvider: A component that sets up the React Query client.
 // fetchData: An async function to fetch data from an API.
 // DataComponent: A component that uses useQuery to fetch and display data.

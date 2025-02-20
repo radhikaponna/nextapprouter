@@ -11,6 +11,7 @@ export default async function UsersPage() {
           <p className="text-gray-700">Username DB: {user.username}</p>
           <p className="text-gray-700">Email DB: {user.email}</p>
           <p className="text-gray-700">Phone DB: {user.phone}</p>
+          <p>users-ORM_DB</p>
         </div>
       ))}
     </div>
