@@ -22,8 +22,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="content">{children}</div>
+        <footer className="footer">
+          <p>
+            Author: Hege Refsnes
+            <a href="mailto:hege@example.com">hege@example.com</a>
+          </p>
+        </footer>
       </body>
     </html>
   );
 }
+//{children} prop is for root page file renders

@@ -4,7 +4,7 @@ import pool from "../../utils/postgres";
 export async function GET() {
   try {
     // Ensure a query is executed to test connection
-    await pool.query("SELECT * FROM page_schemas");
+    await pool.query("SELECT * FROM radhika");
     return NextResponse.json({
       message: "Database connection established successfully",
     });
