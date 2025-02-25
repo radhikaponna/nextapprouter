@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           <nav className="navbar navbar-default">
             <div className="container-fluid bg-blue-500">
               <div className="navbar-header">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                   Growth HUB Website
                 </a>
               </div>

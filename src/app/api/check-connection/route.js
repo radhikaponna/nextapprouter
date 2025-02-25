@@ -4,9 +4,11 @@ import pool from "../../utils/postgres";
 export async function GET() {
   try {
     // Ensure a query is executed to test connection
-    await pool.query("SELECT * FROM radhika");
+    const response = await pool.query("SELECT * FROM otp_verification");
+    console.log(response.rows); // Corrected to log the rows of the response
     return NextResponse.json({
       message: "Database connection established successfully",
+      data: response.rows, // Optionally include the data in the response
     });
   } catch (error) {
     console.error("Database connection error:", error); // Log the error to help debugging

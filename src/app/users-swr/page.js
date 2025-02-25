@@ -17,7 +17,7 @@ export default function User() {
   if (error) return <p>Error loading data</p>;
   if (!data) return <p>Loading...</p>;
 
-  return (
+  return ( 
     <div>
       {data.map((user) => (
         <p key={user.id}>{user.name}</p>

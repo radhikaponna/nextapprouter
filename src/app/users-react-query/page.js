@@ -10,7 +10,7 @@ export default function QueryProvider({ children }) {
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
 }
-
+   
 // Example component to fetch and display data
 const fetchData = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
